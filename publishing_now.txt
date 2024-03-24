@@ -1,0 +1,23 @@
+there are in total 3 steps!
+1) [#! /usr/bin/env node] - > add this in your index.ts file top
+* it tells that anyone can use it on their cli using npx
+* this is called "Shabang"
+* excutable file as a package
+
+
+2) add ["bin": "index.js",] in package file after type
+* tells npm which file we want to execute.
+// also compile ts file to java by [tsc]
+
+3)pushing on npm registry. 
+// type [npm login] in cmd
+// [enter] login to npm in browser
+
+4) publish package
+//type [npm publish]
+
+5) now using our published package
+
+* for errors chk for name and change version
+* for changing versions, change last digit when correcting errors,
+change middle one while enhancing user experience like changing messages etc, and change first digit when doing major release(like adding functionality )

@@ -1,0 +1,60 @@
+* npm is used to manage and store packages
+* npx is a package runner without installing
+
+(command 1->)
+1) npm  init  //initializes package for further working 
+(node package manager)
+// npm init is a command-line instruction used to create a package. json file for a Node. js package.
+2) check screenshot_1.png
+3) opening npm file created by (code .)
+4) now a file will be created pacakge.json in your directory 
+(it is a file containing all details about app)
+5) //init is a shortform of initialization (initializing details about your project)
+
+
+/// we have got a bike for instance (npm init)///
+
+// now configuring our project to use typescript
+1) initializing typescript (command 2->)
+2) tsc --init --> adds tsconfig file
+[in config file]
+
+/// we have got a driver (tsc --init) ///
+
+3) "target": "es2016", --> 2022 (javscript came with a lot of problems, evolve leads to resolve of problems, for using all latest features we do 2022)
+4)  "module": "commonjs",  --> nodenext (when files are created in modules, we want the module or changes to be compatible.)
+5) "moduleResolution": "node10",  uncomment line 30 and nodenext
+
+// config in package file
+1) "type": "module", add this after main (our project will work as module, so we can work in different projects as well.)
+
+/// we are updating driver's skills (amendments in config and pack file) ///
+
+ 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+* now create a file for writing code (main/index file)
+1) now download inquirer package --> [npm i inquirer] in same directory
+* What is inquirer?
+--Ans : inquirer is a package or module for inputs wagerah.
+* dependency: using a predefined medium for this project
+* will be displayed in package .json file after intstallation
+  "dependencies": {
+    "inquirer": "^9.2.16"
+  }
+  "^" -> is used for automatic updates even after some years.
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+* now start working in ts file
+1) import package [import inquirer from "inquirer";]
+
+{-now there's an error because we are missing tools to work on project-}
+
+2) also install npm i --save-dev @types/inquirer //stores types defined in inquirer package
+    "devDependencies": {
+        "@types/inquirer": "^9.0.7"
+    }
+
+* dependencies -> essential component(package to run your project)
+* dev dependencies -> used while making project, not used after project making. is like a hammer used while work.
